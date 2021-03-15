@@ -12,7 +12,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         # 你要操作的目标仓库
-        TARGET_REPO: china-fanxin/vuepress-blog
+        TARGET_REPO: lcy0828/sys_autosign
         # 构建结果存储的分支
         TARGET_BRANCH: gh_pages
         # 要使用的构建命令
