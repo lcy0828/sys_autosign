@@ -12,7 +12,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         # 你要操作的目标仓库
-        TARGET_REPO: lcy0828/sys_autosign
+        TARGET_REPO: china-fanxin/vuepress-blog
         # 构建结果存储的分支
         TARGET_BRANCH: gh_pages
         # 要使用的构建命令
@@ -29,9 +29,9 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
       with:
         # 来源仓库
-        source-repo: "git@github.com:lcy0828/sys_autosign.git"
+        source-repo: "git@github.com:china-fanxin/vuepress-blog.git"
         # 目标仓库
-        destination-repo: "git@gitee.com:lcy0828/sys_autosign.git"
+        destination-repo: "git@gitee.com:china-fanxin/vuepress-blog.git"
   reload-pages:
     needs: sync
     runs-on: ubuntu-latest
